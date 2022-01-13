@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => {
   };
 });
 
-const SearchBox = ({ placeholder, handleChange }) => {
+const SearchBox = ({ placeholder, handleChange, value }) => {
   const { search } = useStyles();
   return (
     <div>
@@ -26,6 +26,7 @@ const SearchBox = ({ placeholder, handleChange }) => {
         className={search}
         placeholder={placeholder}
         onChange={handleChange}
+        value={value}
       />
     </div>
   );
